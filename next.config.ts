@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/smartland-website' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/smartland-website/' : '',
+  basePath: '/smartland-website',
+  assetPrefix: '/smartland-website/',
 }
 
 module.exports = nextConfig
