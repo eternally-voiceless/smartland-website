@@ -4,7 +4,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/smartland-website',
   assetPrefix: '/smartland-website/',
 }
 
