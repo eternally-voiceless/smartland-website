@@ -1,4 +1,5 @@
 import Navigation from './Navigation';
+import { BasePathImage } from './BasePathImage';
 
 interface HeaderProps {
   isNavOpen: boolean;
@@ -11,7 +12,7 @@ const Header = ({ isNavOpen, setIsNavOpen }: HeaderProps) => {
       <header className="fixed top-0 w-full bg-[#134071] h-[15vh] flex justify-center items-center px-8 border-b-2 border-[#ffde59]/30 shadow-lg z-50">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center gap-4">
-            <img src="/assets/icons/modified_logo.png" alt="Logo" className="h-20" />
+            <BasePathImage src="/assets/icons/modified_logo.png" alt="Logo" className="h-20" />
           </div>
           
           {/* Центральный блок с названием и подзаголовком */}

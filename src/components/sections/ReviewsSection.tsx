@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import SectionWrapper from '../SectionWrapper';
+import { BasePathImage } from '../BasePathImage';
 
 const ReviewsSection = () => {
   const reviews = [
@@ -86,7 +87,7 @@ const ReviewsSection = () => {
               onClick={toggleZoom}
             >
               {/* Текущий отзыв */}
-              <img
+              <BasePathImage 
                 src={reviews[currentIndex].image}
                 alt={reviews[currentIndex].alt}
                 className={`max-w-full max-h-[70vh] transition-all duration-500

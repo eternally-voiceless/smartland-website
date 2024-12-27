@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import SectionWrapper from '../SectionWrapper';
+import { BasePathImage } from '../BasePathImage';
 
 interface Teacher {
   id: number;
@@ -281,7 +282,7 @@ const TeachersSection = () => {
                       <div className="absolute inset-0 [backface-visibility:hidden]">
                         <div className="bg-[#fffaf0] hover:bg-[#fff5d6] rounded-2xl overflow-hidden h-full transition-colors duration-500 border border-[#ffde59]/10 hover:border-[#ffde59]/30">
                           <div className="aspect-[3/4] overflow-hidden">
-                            <img
+                            <BasePathImage
                               src={teacher.image}
                               alt={`${teacher.name} - преподаватель`}
                               className="w-full h-full object-cover object-top"
