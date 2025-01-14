@@ -1,0 +1,40 @@
+{
+  "name": "smartland-website",
+  "version": "0.1.0",
+  "homepage": "https://eternally-voiceless.github.io/smartland-website/",
+  "author": {
+    "name": "eternally-voiceless",
+    "email": "v.v.a.onside@gmail.com",
+    "url": "https://eternally-voiceless.github.io/smartland-website/"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:local": "next build",
+    "build:gh-pages": "cross-env DEPLOY_TARGET=gh-pages next build",
+    "export": "next export",
+    "start": "next start",
+    "deploy": "next build && npx gh-pages -d out --repo git@github.com:eternally-voiceless/smartland-website.git",
+    "serve": "http-server out -p 8080 --cors",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "lucide-react": "^0.462.0",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "cross-env": "^7.0.3",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
+    "gh-pages": "^5.0.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
