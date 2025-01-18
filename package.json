@@ -15,7 +15,7 @@
     "build:gh-pages": "cross-env DEPLOY_TARGET=gh-pages next build",
     "export": "next export",
     "start": "next start",
-    "deploy": "next build && npx gh-pages -d out",
+    "deploy": "next build && npx gh-pages -d out --repo git@github.com:eternally-voiceless/smartland-website.git",
     "serve": "npx http-server out -p 8080 --cors",
     "lint": "next lint"
   },
