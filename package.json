@@ -16,7 +16,7 @@
     "export": "next export",
     "start": "next start",
     "deploy": "next build && npx gh-pages -d out",
-    "serve": "http-server out -p 8080 --cors",
+    "serve": "npx http-server out -p 8080 --cors",
     "lint": "next lint"
   },
   "dependencies": {
